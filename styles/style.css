@@ -2,8 +2,13 @@ html{
     background-color: #0F1214;
 }
 
+@font-face {
+    font-family: "thanha";
+    src: url("../Tanha.ttf");
+}
 body {
     margin: 0;
+    font-family: "thanha";
     padding: 0;
     background-color: #000; /* رنگ پس‌زمینه صفحه */
 }
@@ -34,23 +39,23 @@ body {
     align-items: center;
     color: #fff; /* رنگ متن */
     text-decoration: none;
-    padding: 15px 10px; /* پدینگ بزرگتر برای فاصله بیشتر */
+    padding: 10px 5px; /* پدینگ بزرگتر برای فاصله بیشتر */
     transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link i {
     font-size: 24px; /* اندازه ایکون */
-    margin-bottom: 5px; /* فاصله بین ایکون و متن */
+    margin-bottom: 2px; /* فاصله بین ایکون و متن */
 }
 
 .nav-link span {
-    margin-top: 5px; /* فاصله بین ایکون و متن */
+    margin-top: 2px; /* فاصله بین ایکون و متن */
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
     background-color: #6c757d; /* رنگ پس‌زمینه هاور */
-    color: #fff; /* رنگ متن هاور */
-}
+    /* color: #fff; رنگ متن هاور */
+/* }  */
 
 .nav-link.active {
     font-weight: bold; /* bold کردن متن فعال */
