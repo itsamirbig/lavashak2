@@ -1,0 +1,63 @@
+html{
+    background-color: #0F1214;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* رنگ پس‌زمینه صفحه */
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between; /* تنظیم فاصله بین عناصر */
+    background-color: #000; /* رنگ پس‌زمینه منو */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto; /* حذف مارجین بالا */
+}
+
+.nav-item {
+    text-align: center;
+    flex: 1;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column; /* ایکون بالا و متن زیر */
+    align-items: center;
+    color: #fff; /* رنگ متن */
+    text-decoration: none;
+    padding: 15px 10px; /* پدینگ بزرگتر برای فاصله بیشتر */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link i {
+    font-size: 24px; /* اندازه ایکون */
+    margin-bottom: 5px; /* فاصله بین ایکون و متن */
+}
+
+.nav-link span {
+    margin-top: 5px; /* فاصله بین ایکون و متن */
+}
+
+.nav-link:hover {
+    background-color: #6c757d; /* رنگ پس‌زمینه هاور */
+    color: #fff; /* رنگ متن هاور */
+}
+
+.nav-link.active {
+    font-weight: bold; /* bold کردن متن فعال */
+}
+
+@media (min-width: 576px) {
+        body {
+            display: none;
+        }
+    } 
