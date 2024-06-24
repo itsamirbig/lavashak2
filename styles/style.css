@@ -18,7 +18,7 @@ html{
 body {
     margin: 0;
     padding: 0;
-    background-color: #000; 
+    background-color: #000; /* رنگ پس‌زمینه صفحه */
 }
 
 .nav {
@@ -72,20 +72,20 @@ body {
     background: url('../images/4864063.png') no-repeat center center;
     background-size: cover;
     border-radius: 20px; 
-  
+    margin-bottom: 40px;  
 }
 
 @media (max-width: 576px) {
     .mobile-cards {
         display: grid;
-        grid-template-columns: 1fr; /* یک ستون برای کارت‌ها */
+        grid-template-columns: 1fr; 
         gap: 20px;
         padding: 20px;
-        margin-top: 60px; /* برای فاصله از بالا کافی */
+        margin-top: -20px;
     }
 
     .mobile-cards .card {
-        background-color: #fff;
+        background-color: #2b2b2b;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         overflow: hidden;
@@ -106,18 +106,20 @@ body {
     }
 
     .mobile-cards .card-title {
+        color: white;
         font-size: 18px;
         margin-bottom: 10px;
     }
 
     .mobile-cards .card-text {
-        color: #666;
+        color: #eeeeee;
         font-size: 14px;
         line-height: 1.6;
         margin-bottom: 20px;
     }
 
     .mobile-cards .btn-group {
+        color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
