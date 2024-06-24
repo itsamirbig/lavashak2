@@ -1,0 +1,82 @@
+html{
+    background-color: #0F1214;
+}
+
+@font-face {
+    font-family: "isb";
+    src: url("../fonts/isb.ttf"),
+}
+@font-face {
+    font-family: "ism";
+    src: url("../fonts/ism.ttf"),
+}
+@font-face {
+    font-family: "isr";
+    src: url("../fonts/isr.ttf"),
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* رنگ پس‌زمینه صفحه */
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between; /* تنظیم فاصله بین عناصر */
+    background-color: #000; /* رنگ پس‌زمینه منو */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto; /* حذف مارجین بالا */
+    /* border-radius: 10px; */
+}
+
+.nav-item {
+    text-align: center;
+    flex: 1;
+    font-family: "isb";
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px 5px; 
+}
+
+.nav-link i {
+    font-size: 24px; 
+    margin-bottom: 2px; 
+}
+
+.nav-link span {
+    margin-top: 2px; 
+}
+
+.nav-link.active {
+    font-weight: bold; 
+
+}
+
+.banner {
+    width: 100%; 
+    height: 40vh; 
+    background: url('../images/4864063.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 20px; 
+  
+}
+
+@media (min-width: 576px) {
+        body {
+            display: none;
+        }
+    } 
