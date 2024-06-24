@@ -27,3 +27,38 @@ body {
 .btn-custom {
     margin-right: 10px;
 }
+
+.home-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.home-icon a {
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.home-icon a:hover {
+    color: #888888;
+}
+
+    .accordion-item {
+        background-color: #333; /* رنگ پس زمینه هر آیتم آکاردیون */
+        border: 1px solid #555; /* حاشیه بین آیتم‌های آکاردیون */
+        margin-bottom: 10px; /* فاصله بین آیتم‌های آکاردیون */
+        border-radius: 5px; /* گوشه‌های گرد آیتم‌های آکاردیون */
+    }
+    .accordion-button {
+        background-color: #444; /* رنگ پس زمینه دکمه آکاردیون */
+        color: #fff; /* رنگ متن دکمه آکاردیون */
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: #555; /* رنگ پس زمینه دکمه آکاردیون هنگام باز بودن */
+    }
+    .accordion-body {
+        background-color: #555; /* رنگ پس زمینه بدنه آکاردیون */
+        color: #fff; /* رنگ متن بدنه آکاردیون */
+    }
+
