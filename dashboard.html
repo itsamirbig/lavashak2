@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد موبایل</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .accordion-button::after {
+            margin-left: auto;
+            transform: rotate(90deg);
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: none;
+            margin-bottom: 1rem;
+        }
+        .card-header {
+            background-color: #272727;
+            border: none;
+        }
+        .btn-link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .btn-link:hover {
+            color: #cccccc;
+        }
+        .card-body {
+            background-color: #1e1e1e;
+        }
+        .btn-custom {
+            margin: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .qr-code {
+            display: block;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            سرویس شماره 1
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h3 class="card-title">عنوان سرویس</h3>
+                        <p>تاریخ: 1403/01/01</p>
+                        <p>حجم: 50 گیگابایت</p>
+                        <img src="./images/4864063.png" alt="QR Code" class="qr-code">
+                        <p>توضیحات: این قسمت برای نمایش توضیحات سرویس است.</p>
+                        <button class="btn btn-primary btn-custom">تمدید سرویس</button>
+                        <button class="btn btn-secondary btn-custom">آپدیت سرویس</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
