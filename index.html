@@ -8,108 +8,95 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="./styles/style.css">
-  
 </head>
 
 <body>
 
 <div class="banner"></div>
 
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-pagelines"></i>داشبورد</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="./support.html"><i class="fas fa-user-tie"></i>پشتیبانی</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="./index.html"><i class="fas fa-house"></i>خانه</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="./basket.html"><i class="fa-solid fa-basket-shopping"></i>سبد خرید</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="./about-us.html"><i class="fa-solid fa-circle-exclamation"></i>درباره ما</a>
+    </li>
+</ul>
 
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-pagelines"></i>داشبورد</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./support.html"><i class="fas fa-user-tie"></i>پشتیبانی</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./index.html"><i class="fas fa-house"></i>خانه</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><i class="fa-solid fa-basket-shopping"></i>سبد خرید</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./about-us.html"><i class="fa-solid fa-circle-exclamation"></i>درباره ما</a>
-        </li>
-    </ul>
-
-    <div class="mobile-cards">
-      <div class="card">
-          <img src="./images/4864063.png" alt="تصویر کارت">
-          <div class="card-body">
-              <h3 class="card-title">عنوان کارت 1</h3>
-              <p class="card-text">توضیحات کارت 1. این قسمت برای نمایش توضیحات کارت است.</p>
-              <div class="btn-group">
-                  <button class="btn btn-increase" onclick="incrementCountMobile(1)"><i class="fas fa-plus"></i></button>
-                  <span class="quantity" id="quantity1">1</span>
-                  <button class="btn btn-decrease" onclick="decrementCountMobile(1)"><i class="fas fa-minus"></i></button>
-              </div>
-          </div>
-      </div>
-  
-      <div class="card">
-          <img src="./images/4864063.png" alt="تصویر کارت">
-          <div class="card-body">
-              <h3 class="card-title">عنوان کارت 2</h3>
-              <p class="card-text">توضیحات کارت 2. این قسمت برای نمایش توضیحات کارت است.</p>
-              <div class="btn-group">
-                  <button class="btn btn-increase" onclick="incrementCountMobile(2)"><i class="fas fa-plus"></i></button>
-                  <span class="quantity" id="quantity2">1</span>
-                  <button class="btn btn-decrease" onclick="decrementCountMobile(2)"><i class="fas fa-minus"></i></button>
-              </div>
-          </div>
-      </div>
-  </div>
-    <div class="mobile-cards">
-      <div class="card">
-          <img src="./images/4864063.png" alt="تصویر کارت">
-          <div class="card-body">
-              <h3 class="card-title">عنوان کارت 1</h3>
-              <p class="card-text">توضیحات کارت 1. این قسمت برای نمایش توضیحات کارت است.</p>
-              <div class="btn-group">
-                  <button class="btn btn-increase" onclick="incrementCountMobile(1)"><i class="fas fa-plus"></i></button>
-                  <span class="quantity" id="quantity1">1</span>
-                  <button class="btn btn-decrease" onclick="decrementCountMobile(1)"><i class="fas fa-minus"></i></button>
-              </div>
-          </div>
-      </div>
-  
-      <div class="card">
-          <img src="./images/4864063.png" alt="تصویر کارت">
-          <div class="card-body">
-              <h3 class="card-title">عنوان کارت 2</h3>
-              <p class="card-text">توضیحات کارت 2. این قسمت برای نمایش توضیحات کارت است.</p>
-              <div class="btn-group">
-                  <button class="btn btn-increase" onclick="incrementCountMobile(2)"><i class="fas fa-plus"></i></button>
-                  <span class="quantity" id="quantity2">1</span>
-                  <button class="btn btn-decrease" onclick="decrementCountMobile(2)"><i class="fas fa-minus"></i></button>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="mobile-cards" style="margin-bottom: 50px;">
+<div class="mobile-cards">
     <div class="card">
         <img src="./images/4864063.png" alt="تصویر کارت">
         <div class="card-body">
-            <h3 class="card-title">عنوان کارت 1</h3>
-            <p class="card-text">توضیحات کارت 1. این قسمت برای نمایش توضیحات کارت است</p>
+            <h3 class="card-title">سرویس 1ماه 1کاربر</h3>
+            <p class="card-text">توضیحات کارت 1. این قسمت برای نمایش توضیحات کارت است.</p>
             <div class="btn-group">
-                <button class="btn btn-increase" onclick="incrementCountMobile(1)"><i class="fas fa-plus"></i></button>
-                <span class="quantity" id="quantity1">1</span>
-                <button class="btn btn-decrease" onclick="decrementCountMobile(1)"><i class="fas fa-minus"></i></button>
+                <button class="btn btn-add-to-cart" style="background-color: green;">افزودن به سبد خرید</button>
             </div>
         </div>
     </div>
 
+    <div class="card">
+        <img src="./images/4864063.png" alt="تصویر کارت">
+        <div class="card-body">
+            <h3 class="card-title">سرویس 1ماه 2کاربر</h3>
+            <p class="card-text">توضیحات کارت 2. این قسمت برای نمایش توضیحات کارت است.</p>
+            <div class="btn-group">
+                <button class="btn btn-add-to-cart" style="background-color: green;">افزودن به سبد خرید</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="mobile-cards">
+    <div class="card">
+        <img src="./images/4864063.png" alt="تصویر کارت">
+        <div class="card-body">
+            <h3 class="card-title">سرویس 1ماه 3کاربر</h3>
+            <p class="card-text">توضیحات کارت 1. این قسمت برای نمایش توضیحات کارت است.</p>
+            <div class="btn-group">
+                <button class="btn btn-add-to-cart" style="background-color: green;">افزودن به سبد خرید</button>
+            </div>
+        </div>
+    </div>
 
-  <script  src="./js/app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
-    integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="card">
+        <img src="./images/4864063.png" alt="تصویر کارت">
+        <div class="card-body">
+            <h3 class="card-title">سرویس 1ماه 4کاربر</h3>
+            <p class="card-text">توضیحات کارت 2. این قسمت برای نمایش توضیحات کارت است.</p>
+            <div class="btn-group">
+                <button class="btn btn-add-to-cart" style="background-color: green;">افزودن به سبد خرید</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-cards" style="margin-bottom: 50px;">
+  <div class="card">
+      <img src="./images/4864063.png" alt="تصویر کارت">
+      <div class="card-body">
+          <h3 class="card-title">سرویس 1ماه 5کاربر</h3>
+          <p class="card-text">توضیحات کارت 1. این قسمت برای نمایش توضیحات کارت است.</p>
+          <div class="btn-group">
+              <button class="btn btn-add-to-cart" style="background-color: green;">افزودن به سبد خرید</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script  src="./js/app.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+  integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
-
 </html>
